@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weniv Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">
+            <img src="images/weniv-logo.svg" alt="weniv logo">
+        </h1>
+    </header>
+
+    <main>
+        <section class="timer-card">
+            <h2>TIMER</h2>
+
+            <form class="timer-display">
+                <label>
+                    <input type="number" id="hours" min="0" max="23" value="00">
+                    <span>HRS</span>
+                </label>
+
+                <span>:</span>
+
+                <label>
+                    <input type="number" id="minutes" min="0" max="59" value="00">
+                    <span>MIN</span>
+                </label>
+
+                <span>:</span>
+
+                <label>
+                    <input type="number" id="seconds" min="0" max="59" value="00">
+                    <span>SEC</span>
+                </label>
+            </form>
+
+            <nav class="button-group">
+                <button type="button" id="startBtn">
+                    <img src="images/icon-start.png" alt="starticon">Start
+                </button>
+                <button type="button" id="pauseBtn" disabled> 
+                    <img src="images/icon-stop.png" alt="starticon">Pause
+                </button>
+                <button type="button" id="resetBtn">
+                    <img src="images/icon-reset.svg" alt="starticon">RESET</button>
+            </nav>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© weniv Corp.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
